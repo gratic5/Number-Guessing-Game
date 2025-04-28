@@ -37,7 +37,7 @@ def start():
             flag = False
             while(lives > 0):
                 
-                print(f"You have {lives} {'attempts' if lives > 1 else 'attempts'} remaining to guess the number.")
+                print(f"You have {lives} {'attempts' if lives > 1 else 'attempt'} remaining to guess the number.")
                 a1 = int(input("Make a guess: "))
                 print()
 
@@ -55,7 +55,7 @@ def start():
                     lives -= 1
 
                 elif a1 > number:
-                    print("too high")
+                    print("Too high")
                     print()
                     lives -= 1
             if not flag:
